@@ -761,13 +761,13 @@ function populateParameters(result) {var _result$brand =
   // wx.getAccountInfoSync
 
   var parameters = {
-    appId: "__UNI__8AD7A0C",
-    appName: "shopping",
+    appId: "__UNI__A06A6D1",
+    appName: "shoppingMall",
     appVersion: "1.0.0",
     appVersionCode: "100",
     appLanguage: getAppLanguage(hostLanguage),
-    uniCompileVersion: "3.6.4",
-    uniRuntimeVersion: "3.6.4",
+    uniCompileVersion: "3.6.5",
+    uniRuntimeVersion: "3.6.5",
     uniPlatform: undefined || "mp-weixin",
     deviceBrand: deviceBrand,
     deviceModel: model,
@@ -870,8 +870,8 @@ var getAppBaseInfo = {
     var hostLanguage = language.replace('_', '-');
 
     result = sortObject(Object.assign(result, {
-      appId: "__UNI__8AD7A0C",
-      appName: "shopping",
+      appId: "__UNI__A06A6D1",
+      appName: "shoppingMall",
       appVersion: "1.0.0",
       appVersionCode: "100",
       appLanguage: getAppLanguage(hostLanguage),
@@ -1464,7 +1464,7 @@ function initData(vueOptions, context) {
     try {
       data = data.call(context); // 支持 Vue.prototype 上挂的数据
     } catch (e) {
-      if (Object({"VUE_APP_NAME":"shopping","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"shoppingMall","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.warn('根据 Vue 的 data 函数初始化小程序 data 失败，请尽量确保 data 函数中不访问 vm 对象，否则可能影响首次数据渲染速度。', data);
       }
     }
@@ -2370,7 +2370,9 @@ function parseBasePage(vuePageOptions, _ref6)
     this.$vm.$mp.query = query; // 兼容 mpvue
     this.$vm.__call_hook('onLoad', query);
   };
-  initUnknownHooks(pageOptions.methods, vuePageOptions, ['onReady']);
+  {
+    initUnknownHooks(pageOptions.methods, vuePageOptions, ['onReady']);
+  }
 
   return pageOptions;
 }
@@ -8556,7 +8558,7 @@ function type(obj) {
 
 function flushCallbacks$1(vm) {
     if (vm.__next_tick_callbacks && vm.__next_tick_callbacks.length) {
-        if (Object({"VUE_APP_NAME":"shopping","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+        if (Object({"NODE_ENV":"development","VUE_APP_NAME":"shoppingMall","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:flushCallbacks[' + vm.__next_tick_callbacks.length + ']');
@@ -8577,14 +8579,14 @@ function nextTick$1(vm, cb) {
     //1.nextTick 之前 已 setData 且 setData 还未回调完成
     //2.nextTick 之前存在 render watcher
     if (!vm.__next_tick_pending && !hasRenderWatcher(vm)) {
-        if(Object({"VUE_APP_NAME":"shopping","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"shoppingMall","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + vm._uid +
                 ']:nextVueTick');
         }
         return nextTick(cb, vm)
     }else{
-        if(Object({"VUE_APP_NAME":"shopping","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG){
+        if(Object({"NODE_ENV":"development","VUE_APP_NAME":"shoppingMall","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG){
             var mpInstance$1 = vm.$scope;
             console.log('[' + (+new Date) + '][' + (mpInstance$1.is || mpInstance$1.route) + '][' + vm._uid +
                 ']:nextMPTick');
@@ -8670,7 +8672,7 @@ var patch = function(oldVnode, vnode) {
     });
     var diffData = this.$shouldDiffData === false ? data : diff(data, mpData);
     if (Object.keys(diffData).length) {
-      if (Object({"VUE_APP_NAME":"shopping","VUE_APP_PLATFORM":"mp-weixin","NODE_ENV":"development","BASE_URL":"/"}).VUE_APP_DEBUG) {
+      if (Object({"NODE_ENV":"development","VUE_APP_NAME":"shoppingMall","VUE_APP_PLATFORM":"mp-weixin","BASE_URL":"/"}).VUE_APP_DEBUG) {
         console.log('[' + (+new Date) + '][' + (mpInstance.is || mpInstance.route) + '][' + this._uid +
           ']差量更新',
           JSON.stringify(diffData));
@@ -9084,9 +9086,9 @@ internalMixin(Vue);
 
 /***/ }),
 /* 5 */
-/*!***************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/pages.json ***!
-  \***************************************************************/
+/*!*********************************************!*\
+  !*** D:/work_space/shoppingMall/pages.json ***!
+  \*********************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -9227,9 +9229,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 12 */
-/*!***********************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/index.js ***!
-  \***********************************************************************************/
+/*!****************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/index.js ***!
+  \****************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9316,9 +9318,9 @@ var install = function install(Vue) {
 
 /***/ }),
 /* 13 */
-/*!**********************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/mixin/mixin.js ***!
-  \**********************************************************************************************/
+/*!***************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/mixin/mixin.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9485,9 +9487,9 @@ var install = function install(Vue) {
 
 /***/ }),
 /* 14 */
-/*!************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/mixin/mpMixin.js ***!
-  \************************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/mixin/mpMixin.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9500,9 +9502,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 15 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/index.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/index.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9513,9 +9515,9 @@ _Request.default;exports.default = _default;
 
 /***/ }),
 /* 16 */
-/*!************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/core/Request.js ***!
-  \************************************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/core/Request.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9721,9 +9723,9 @@ Request = /*#__PURE__*/function () {
 
 /***/ }),
 /* 17 */
-/*!********************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
-  \********************************************************************************************************************/
+/*!*************************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
+  \*************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9734,9 +9736,9 @@ function _default(config) {return (0, _index.default)(config);};exports.default 
 
 /***/ }),
 /* 18 */
-/*!**************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/adapters/index.js ***!
-  \**************************************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/adapters/index.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9842,9 +9844,9 @@ function _default(config) {return new Promise(function (resolve, reject) {
 
 /***/ }),
 /* 19 */
-/*!****************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/helpers/buildURL.js ***!
-  \****************************************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/helpers/buildURL.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9921,9 +9923,9 @@ function buildURL(url, params) {
 
 /***/ }),
 /* 20 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/utils.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/utils.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10062,9 +10064,9 @@ function isUndefined(val) {
 
 /***/ }),
 /* 21 */
-/*!******************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/core/buildFullPath.js ***!
-  \******************************************************************************************************************/
+/*!***********************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/core/buildFullPath.js ***!
+  \***********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10092,9 +10094,9 @@ function buildFullPath(baseURL, requestedURL) {
 
 /***/ }),
 /* 22 */
-/*!*********************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
-  \*********************************************************************************************************************/
+/*!**************************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
+  \**************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10116,9 +10118,9 @@ function isAbsoluteURL(url) {
 
 /***/ }),
 /* 23 */
-/*!*******************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
-  \*******************************************************************************************************************/
+/*!************************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
+  \************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10140,9 +10142,9 @@ function combineURLs(baseURL, relativeURL) {
 
 /***/ }),
 /* 24 */
-/*!***********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/core/settle.js ***!
-  \***********************************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/core/settle.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10166,9 +10168,9 @@ function settle(resolve, reject, response) {var
 
 /***/ }),
 /* 25 */
-/*!***********************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
-  \***********************************************************************************************************************/
+/*!****************************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
+  \****************************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10226,9 +10228,9 @@ InterceptorManager;exports.default = _default;
 
 /***/ }),
 /* 26 */
-/*!****************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/core/mergeConfig.js ***!
-  \****************************************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/core/mergeConfig.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10339,9 +10341,9 @@ function _default(globalsConfig) {var config2 = arguments.length > 1 && argument
 
 /***/ }),
 /* 27 */
-/*!*************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/core/defaults.js ***!
-  \*************************************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/core/defaults.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10377,9 +10379,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 28 */
-/*!***********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/luch-request/utils/clone.js ***!
-  \***********************************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/luch-request/utils/clone.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10648,7 +10650,7 @@ var clone = function () {
 }();var _default =
 
 clone;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../HBuilderX/plugins/uniapp-cli/node_modules/buffer/index.js */ 29).Buffer))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../Program Files/HBuilderX/plugins/uniapp-cli/node_modules/buffer/index.js */ 29).Buffer))
 
 /***/ }),
 /* 29 */
@@ -12725,17 +12727,17 @@ module.exports = Array.isArray || function (arr) {
 
 /***/ }),
 /* 33 */
-/*!*********************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/util/route.js ***!
-  \*********************************************************************************************/
+/*!**************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/util/route.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 34));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * 并且带有路由拦截功能
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */var
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              * 并且带有路由拦截功能
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */var
 
 Router = /*#__PURE__*/function () {
   function Router() {_classCallCheck(this, Router);
@@ -12787,7 +12789,7 @@ Router = /*#__PURE__*/function () {
                   mergeConfig.url = this.mixinParam(options, params);
                   mergeConfig.type = 'navigateTo';
                 } else {
-                  mergeConfig = uni.$u.deepClone(options, this.config);
+                  mergeConfig = uni.$u.deepMerge(options, this.config);
                   // 否则正常使用mergeConfig中的url和params进行拼接
                   mergeConfig.url = this.mixinParam(options.url, options.params);
                 }
@@ -13648,9 +13650,9 @@ if (hadRuntime) {
 
 /***/ }),
 /* 37 */
-/*!*********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/function/colorGradient.js ***!
-  \*********************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/function/colorGradient.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13791,9 +13793,9 @@ function colorToRgba(color, alpha) {
 
 /***/ }),
 /* 38 */
-/*!************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/function/test.js ***!
-  \************************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/function/test.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13809,7 +13811,7 @@ function email(value) {
    * 验证手机格式
    */
 function mobile(value) {
-  return /^1[23456789]\d{9}$/.test(value);
+  return /^1([3589]\d|4[5-9]|6[1-2,4-7]|7[0-8])\d{8}$/.test(value);
 }
 
 /**
@@ -14088,9 +14090,9 @@ function regExp(o) {
 
 /***/ }),
 /* 39 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/function/debounce.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/function/debounce.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14127,9 +14129,9 @@ debounce;exports.default = _default;
 
 /***/ }),
 /* 40 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/function/throttle.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/function/throttle.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14167,9 +14169,9 @@ throttle;exports.default = _default;
 
 /***/ }),
 /* 41 */
-/*!*************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/function/index.js ***!
-  \*************************************************************************************************/
+/*!******************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/function/index.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14468,15 +14470,15 @@ function timeFormat() {var dateTime = arguments.length > 0 && arguments[0] !== u
     else if (typeof dateTime === 'string' && /^\d+$/.test(dateTime.trim())) {
         date = new Date(Number(dateTime));
       }
-      // 其他都认为符合 RFC 2822 规范
-      else {
-          // 处理平台性差异，在Safari/Webkit中，new Date仅支持/作为分割符的字符串时间
-          date = new Date(
-          typeof dateTime === 'string' ?
-          dateTime.replace(/-/g, '/') :
-          dateTime);
-
+      // 处理平台性差异，在Safari/Webkit中，new Date仅支持/作为分割符的字符串时间
+      // 处理 '2022-07-10 01:02:03'，跳过 '2022-07-10T01:02:03'
+      else if (typeof dateTime === 'string' && dateTime.includes('-') && !dateTime.includes('T')) {
+          date = new Date(dateTime.replace(/-/g, '/'));
         }
+        // 其他都认为符合 RFC 2822 规范
+        else {
+            date = new Date(dateTime);
+          }
 
   var timeSource = {
     'y': date.getFullYear().toString(), // 年
@@ -14882,9 +14884,9 @@ function setConfig(_ref3)
 
 /***/ }),
 /* 42 */
-/*!*************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/function/digit.js ***!
-  \*************************************************************************************************/
+/*!******************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/function/digit.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15057,19 +15059,19 @@ function enableBoundaryChecking() {var flag = arguments.length > 0 && arguments[
 
 /***/ }),
 /* 43 */
-/*!************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/config.js ***!
-  \************************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/config.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 此版本发布于2022-04-19
-var version = '2.0.31';
+Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; // 此版本发布于2022-00-24
+var version = '2.0.34';
 
 // 开发环境才提示，生产环境不会提示
 if (true) {
-  console.log("\n %c uView V".concat(version, " %c https://www.uviewui.com/ \n\n"), 'color: #ffffff; background: #3c9cff; padding:5px 0;', 'color: #3c9cff;background: #ffffff; padding:5px 0;');
+  console.log("\n %c uView V".concat(version, " %c https://uviewui.com/ \n\n"), 'color: #ffffff; background: #3c9cff; padding:5px 0; border-radius: 5px;');
 }var _default =
 
 {
@@ -15100,9 +15102,9 @@ if (true) {
 
 /***/ }),
 /* 44 */
-/*!***********************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props.js ***!
-  \***********************************************************************************************/
+/*!****************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15299,9 +15301,9 @@ _upload.default);exports.default = _default;
 
 /***/ }),
 /* 45 */
-/*!***********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/actionSheet.js ***!
-  \***********************************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/actionSheet.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15332,9 +15334,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 46 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/album.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/album.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15365,9 +15367,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 47 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/alert.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/alert.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15395,9 +15397,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 48 */
-/*!******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/avatar.js ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/avatar.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15431,9 +15433,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 49 */
-/*!***********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/avatarGroup.js ***!
-  \***********************************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/avatarGroup.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15462,9 +15464,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 50 */
-/*!*******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/backtop.js ***!
-  \*******************************************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/backtop.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15496,9 +15498,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 51 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/badge.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/badge.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15531,9 +15533,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 52 */
-/*!******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/button.js ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/button.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15581,9 +15583,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 53 */
-/*!********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/calendar.js ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/calendar.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15631,9 +15633,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 54 */
-/*!***********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/carKeyboard.js ***!
-  \***********************************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/carKeyboard.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15654,9 +15656,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 55 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/cell.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/cell.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15697,9 +15699,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 56 */
-/*!*********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/cellGroup.js ***!
-  \*********************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/cellGroup.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15722,9 +15724,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 57 */
-/*!********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/checkbox.js ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/checkbox.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15757,9 +15759,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 58 */
-/*!*************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
-  \*************************************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15794,9 +15796,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 59 */
-/*!**************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/circleProgress.js ***!
-  \**************************************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/circleProgress.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15817,9 +15819,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 60 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/code.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/code.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15846,9 +15848,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 61 */
-/*!*********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/codeInput.js ***!
-  \*********************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/codeInput.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15865,6 +15867,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 {
   // codeInput 组件
   codeInput: {
+    adjustPosition: true,
     maxlength: 6,
     dot: false,
     mode: 'box',
@@ -15882,9 +15885,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 62 */
-/*!***************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/col.js ***!
-  \***************************************************************************************************/
+/*!********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/col.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15909,9 +15912,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 63 */
-/*!********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/collapse.js ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/collapse.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15934,9 +15937,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 64 */
-/*!************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/collapseItem.js ***!
-  \************************************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/collapseItem.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15967,9 +15970,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 65 */
-/*!************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/columnNotice.js ***!
-  \************************************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/columnNotice.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15999,9 +16002,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 66 */
-/*!*********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/countDown.js ***!
-  \*********************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/countDown.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16025,9 +16028,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 67 */
-/*!*******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/countTo.js ***!
-  \*******************************************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/countTo.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16058,9 +16061,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 68 */
-/*!**************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/datetimePicker.js ***!
-  \**************************************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/datetimePicker.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16102,9 +16105,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 69 */
-/*!*******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/divider.js ***!
-  \*******************************************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/divider.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16132,9 +16135,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 70 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/empty.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/empty.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16165,9 +16168,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 71 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/form.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/form.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16195,9 +16198,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 72 */
-/*!********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/formItem.js ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/formItem.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16217,6 +16220,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     label: '',
     prop: '',
     borderBottom: '',
+    labelPosition: '',
     labelWidth: '',
     rightIcon: '',
     leftIcon: '',
@@ -16225,9 +16229,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 73 */
-/*!***************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/gap.js ***!
-  \***************************************************************************************************/
+/*!********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/gap.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16252,9 +16256,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 74 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/grid.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/grid.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16277,9 +16281,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 75 */
-/*!********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/gridItem.js ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/gridItem.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16301,9 +16305,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 76 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/icon.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/icon.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16345,9 +16349,9 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 43));f
 
 /***/ }),
 /* 77 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/image.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/image.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16383,9 +16387,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 78 */
-/*!***********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/indexAnchor.js ***!
-  \***********************************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/indexAnchor.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16410,9 +16414,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 79 */
-/*!*********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/indexList.js ***!
-  \*********************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/indexList.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16437,9 +16441,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 80 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/input.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/input.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16493,9 +16497,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 81 */
-/*!********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/keyboard.js ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/keyboard.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16531,9 +16535,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 82 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/line.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/line.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16559,9 +16563,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 83 */
-/*!************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/lineProgress.js ***!
-  \************************************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/lineProgress.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16586,9 +16590,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 84 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/link.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/link.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16620,9 +16624,9 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 43));f
 
 /***/ }),
 /* 85 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/list.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/list.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16656,9 +16660,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 86 */
-/*!********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/listItem.js ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/listItem.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16679,9 +16683,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 87 */
-/*!***********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/loadingIcon.js ***!
-  \***********************************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/loadingIcon.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16717,9 +16721,9 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 43));f
 
 /***/ }),
 /* 88 */
-/*!***********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/loadingPage.js ***!
-  \***********************************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/loadingPage.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16743,13 +16747,14 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     bgColor: '#ffffff',
     color: '#C8C8C8',
     fontSize: 19,
+    iconSize: 28,
     loadingColor: '#C8C8C8' } };exports.default = _default;
 
 /***/ }),
 /* 89 */
-/*!********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/loadmore.js ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/loadmore.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16770,6 +16775,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     bgColor: 'transparent',
     icon: true,
     fontSize: 14,
+    iconSize: 17,
     color: '#606266',
     loadingIcon: 'spinner',
     loadmoreText: '加载更多',
@@ -16780,13 +16786,15 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     marginTop: 10,
     marginBottom: 10,
     height: 'auto',
-    line: false } };exports.default = _default;
+    line: false,
+    lineColor: '#E6E8EB',
+    dashed: false } };exports.default = _default;
 
 /***/ }),
 /* 90 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/modal.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/modal.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16822,9 +16830,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 91 */
-/*!******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/navbar.js ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/navbar.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16861,9 +16869,9 @@ var _color = _interopRequireDefault(__webpack_require__(/*! ../color */ 92));fun
 
 /***/ }),
 /* 92 */
-/*!***********************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/color.js ***!
-  \***********************************************************************************************/
+/*!****************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/color.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16888,9 +16896,9 @@ color;exports.default = _default;
 
 /***/ }),
 /* 93 */
-/*!*********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/noNetwork.js ***!
-  \*********************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/noNetwork.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16913,9 +16921,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 94 */
-/*!*********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/noticeBar.js ***!
-  \*********************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/noticeBar.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16948,9 +16956,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 95 */
-/*!******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/notify.js ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/notify.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16978,9 +16986,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 96 */
-/*!*********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/numberBox.js ***!
-  \*********************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/numberBox.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17021,9 +17029,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 97 */
-/*!**************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/numberKeyboard.js ***!
-  \**************************************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/numberKeyboard.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17046,9 +17054,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 98 */
-/*!*******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/overlay.js ***!
-  \*******************************************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/overlay.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17072,9 +17080,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 99 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/parse.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/parse.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17102,9 +17110,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 100 */
-/*!******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/picker.js ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/picker.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17131,7 +17139,6 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     confirmText: '确定',
     cancelColor: '#909193',
     confirmColor: '#3c9cff',
-    singleIndex: 0,
     visibleItemCount: 5,
     keyName: 'text',
     closeOnClickOverlay: false,
@@ -17140,9 +17147,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 101 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/popup.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/popup.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17177,9 +17184,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 102 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/radio.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/radio.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17212,9 +17219,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 103 */
-/*!**********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/radioGroup.js ***!
-  \**********************************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/radioGroup.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17250,9 +17257,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 104 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/rate.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/rate.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17284,9 +17291,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 105 */
-/*!********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/readMore.js ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/readMore.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17314,9 +17321,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 106 */
-/*!***************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/row.js ***!
-  \***************************************************************************************************/
+/*!********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/row.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17339,9 +17346,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 107 */
-/*!*********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/rowNotice.js ***!
-  \*********************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/rowNotice.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17368,9 +17375,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 108 */
-/*!**********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/scrollList.js ***!
-  \**********************************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/scrollList.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17396,9 +17403,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 109 */
-/*!******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/search.js ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/search.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17441,9 +17448,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 110 */
-/*!*******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/section.js ***!
-  \*******************************************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/section.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17473,9 +17480,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 111 */
-/*!********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/skeleton.js ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/skeleton.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17506,9 +17513,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 112 */
-/*!******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/slider.js ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/slider.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17539,9 +17546,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 113 */
-/*!*********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/statusBar.js ***!
-  \*********************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/statusBar.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17562,9 +17569,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 114 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/steps.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/steps.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17591,9 +17598,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 115 */
-/*!*********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/stepsItem.js ***!
-  \*********************************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/stepsItem.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17617,9 +17624,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 116 */
-/*!******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/sticky.js ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/sticky.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17645,9 +17652,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 117 */
-/*!**********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/subsection.js ***!
-  \**********************************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/subsection.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17676,9 +17683,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 118 */
-/*!***********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/swipeAction.js ***!
-  \***********************************************************************************************************/
+/*!****************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/swipeAction.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17699,9 +17706,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 119 */
-/*!***************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/swipeActionItem.js ***!
-  \***************************************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/swipeActionItem.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17728,9 +17735,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 120 */
-/*!******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/swiper.js ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/swiper.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17774,9 +17781,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 121 */
-/*!****************************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/swipterIndicator.js ***!
-  \****************************************************************************************************************/
+/*!*********************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/swipterIndicator.js ***!
+  \*********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17801,9 +17808,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 122 */
-/*!******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/switch.js ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/switch.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17833,9 +17840,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 123 */
-/*!******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/tabbar.js ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/tabbar.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17863,9 +17870,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 124 */
-/*!**********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/tabbarItem.js ***!
-  \**********************************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/tabbarItem.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17891,9 +17898,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 125 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/tabs.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/tabs.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17931,9 +17938,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 126 */
-/*!***************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/tag.js ***!
-  \***************************************************************************************************/
+/*!********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/tag.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17968,9 +17975,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 127 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/text.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/text.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18013,9 +18020,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 128 */
-/*!********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/textarea.js ***!
-  \********************************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/textarea.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18037,7 +18044,7 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
     placeholderClass: 'textarea-placeholder',
     placeholderStyle: 'color: #c0c4cc',
     height: 70,
-    confirmType: '',
+    confirmType: 'done',
     disabled: false,
     count: false,
     focus: false,
@@ -18057,9 +18064,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 129 */
-/*!*****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/toast.js ***!
-  \*****************************************************************************************************/
+/*!**********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/toast.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18094,9 +18101,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 130 */
-/*!*******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/toolbar.js ***!
-  \*******************************************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/toolbar.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18122,9 +18129,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 131 */
-/*!*******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/tooltip.js ***!
-  \*******************************************************************************************************/
+/*!************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/tooltip.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18155,9 +18162,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 132 */
-/*!**********************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/transition.js ***!
-  \**********************************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/transition.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18181,9 +18188,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 133 */
-/*!******************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/props/upload.js ***!
-  \******************************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/props/upload.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18225,9 +18232,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 134 */
-/*!************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/config/zIndex.js ***!
-  \************************************************************************************************/
+/*!*****************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/config/zIndex.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18254,9 +18261,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 135 */
-/*!****************************************************************************************************!*\
-  !*** F:/360Downloads/Software/hbuilkderx/shopping/node_modules/uview-ui/libs/function/platform.js ***!
-  \****************************************************************************************************/
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/libs/function/platform.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18336,6 +18343,309 @@ platform = 'mp';var _default =
 
 
 platform;exports.default = _default;
+
+/***/ }),
+/* 136 */,
+/* 137 */,
+/* 138 */,
+/* 139 */,
+/* 140 */,
+/* 141 */,
+/* 142 */,
+/* 143 */,
+/* 144 */,
+/* 145 */,
+/* 146 */,
+/* 147 */,
+/* 148 */,
+/* 149 */
+/*!************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/components/u-swiper/props.js ***!
+  \************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 列表数组，元素可为字符串，如为对象可通过keyName指定目标属性名
+    list: {
+      type: Array,
+      default: uni.$u.props.swiper.list },
+
+    // 是否显示面板指示器
+    indicator: {
+      type: Boolean,
+      default: uni.$u.props.swiper.indicator },
+
+    // 指示器非激活颜色
+    indicatorActiveColor: {
+      type: String,
+      default: uni.$u.props.swiper.indicatorActiveColor },
+
+    // 指示器的激活颜色
+    indicatorInactiveColor: {
+      type: String,
+      default: uni.$u.props.swiper.indicatorInactiveColor },
+
+    // 指示器样式，可通过bottom，left，right进行定位
+    indicatorStyle: {
+      type: [String, Object],
+      default: uni.$u.props.swiper.indicatorStyle },
+
+    // 指示器模式，line-线型，dot-点型
+    indicatorMode: {
+      type: String,
+      default: uni.$u.props.swiper.indicatorMode },
+
+    // 是否自动切换
+    autoplay: {
+      type: Boolean,
+      default: uni.$u.props.swiper.autoplay },
+
+    // 当前所在滑块的 index
+    current: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.current },
+
+    // 当前所在滑块的 item-id ，不能与 current 被同时指定
+    currentItemId: {
+      type: String,
+      default: uni.$u.props.swiper.currentItemId },
+
+    // 滑块自动切换时间间隔
+    interval: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.interval },
+
+    // 滑块切换过程所需时间
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.duration },
+
+    // 播放到末尾后是否重新回到开头
+    circular: {
+      type: Boolean,
+      default: uni.$u.props.swiper.circular },
+
+    // 前边距，可用于露出前一项的一小部分，nvue和支付宝不支持
+    previousMargin: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.previousMargin },
+
+    // 后边距，可用于露出后一项的一小部分，nvue和支付宝不支持
+    nextMargin: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.nextMargin },
+
+    // 当开启时，会根据滑动速度，连续滑动多屏，支付宝不支持
+    acceleration: {
+      type: Boolean,
+      default: uni.$u.props.swiper.acceleration },
+
+    // 同时显示的滑块数量，nvue、支付宝小程序不支持
+    displayMultipleItems: {
+      type: Number,
+      default: uni.$u.props.swiper.displayMultipleItems },
+
+    // 指定swiper切换缓动动画类型，有效值：default、linear、easeInCubic、easeOutCubic、easeInOutCubic
+    // 只对微信小程序有效
+    easingFunction: {
+      type: String,
+      default: uni.$u.props.swiper.easingFunction },
+
+    // list数组中指定对象的目标属性名
+    keyName: {
+      type: String,
+      default: uni.$u.props.swiper.keyName },
+
+    // 图片的裁剪模式
+    imgMode: {
+      type: String,
+      default: uni.$u.props.swiper.imgMode },
+
+    // 组件高度
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.height },
+
+    // 背景颜色
+    bgColor: {
+      type: String,
+      default: uni.$u.props.swiper.bgColor },
+
+    // 组件圆角，数值或带单位的字符串
+    radius: {
+      type: [String, Number],
+      default: uni.$u.props.swiper.radius },
+
+    // 是否加载中
+    loading: {
+      type: Boolean,
+      default: uni.$u.props.swiper.loading },
+
+    // 是否显示标题，要求数组对象中有title属性
+    showTitle: {
+      type: Boolean,
+      default: uni.$u.props.swiper.showTitle } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */,
+/* 156 */,
+/* 157 */
+/*!*********************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/components/u-gap/props.js ***!
+  \*********************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 背景颜色（默认transparent）
+    bgColor: {
+      type: String,
+      default: uni.$u.props.gap.bgColor },
+
+    // 分割槽高度，单位px（默认30）
+    height: {
+      type: [String, Number],
+      default: uni.$u.props.gap.height },
+
+    // 与上一个组件的距离
+    marginTop: {
+      type: [String, Number],
+      default: uni.$u.props.gap.marginTop },
+
+    // 与下一个组件的距离
+    marginBottom: {
+      type: [String, Number],
+      default: uni.$u.props.gap.marginBottom } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */,
+/* 164 */,
+/* 165 */
+/*!******************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
+  \******************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 是否显示组件
+    show: {
+      type: Boolean,
+      default: uni.$u.props.loadingIcon.show },
+
+    // 颜色
+    color: {
+      type: String,
+      default: uni.$u.props.loadingIcon.color },
+
+    // 提示文字颜色
+    textColor: {
+      type: String,
+      default: uni.$u.props.loadingIcon.textColor },
+
+    // 文字和图标是否垂直排列
+    vertical: {
+      type: Boolean,
+      default: uni.$u.props.loadingIcon.vertical },
+
+    // 模式选择，circle-圆形，spinner-花朵形，semicircle-半圆形
+    mode: {
+      type: String,
+      default: uni.$u.props.loadingIcon.mode },
+
+    // 图标大小，单位默认px
+    size: {
+      type: [String, Number],
+      default: uni.$u.props.loadingIcon.size },
+
+    // 文字大小
+    textSize: {
+      type: [String, Number],
+      default: uni.$u.props.loadingIcon.textSize },
+
+    // 文字内容
+    text: {
+      type: [String, Number],
+      default: uni.$u.props.loadingIcon.text },
+
+    // 动画模式
+    timingFunction: {
+      type: String,
+      default: uni.$u.props.loadingIcon.timingFunction },
+
+    // 动画执行周期时间
+    duration: {
+      type: [String, Number],
+      default: uni.$u.props.loadingIcon.duration },
+
+    // mode=circle时的暗边颜色
+    inactiveColor: {
+      type: String,
+      default: uni.$u.props.loadingIcon.inactiveColor } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
+
+/***/ }),
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */,
+/* 172 */,
+/* 173 */
+/*!**********************************************************************************************!*\
+  !*** D:/work_space/shoppingMall/uni_modules/uview-ui/components/u-swiper-indicator/props.js ***!
+  \**********************************************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _default = {
+  props: {
+    // 轮播的长度
+    length: {
+      type: [String, Number],
+      default: uni.$u.props.swiperIndicator.length },
+
+    // 当前处于活动状态的轮播的索引
+    current: {
+      type: [String, Number],
+      default: uni.$u.props.swiperIndicator.current },
+
+    // 指示器非激活颜色
+    indicatorActiveColor: {
+      type: String,
+      default: uni.$u.props.swiperIndicator.indicatorActiveColor },
+
+    // 指示器的激活颜色
+    indicatorInactiveColor: {
+      type: String,
+      default: uni.$u.props.swiperIndicator.indicatorInactiveColor },
+
+    // 指示器模式，line-线型，dot-点型
+    indicatorMode: {
+      type: String,
+      default: uni.$u.props.swiperIndicator.indicatorMode } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ })
 ]]);

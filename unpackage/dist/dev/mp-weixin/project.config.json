@@ -6,9 +6,9 @@
   },
   "setting": {
     "urlCheck": false,
-    "es6": false,
-    "postcss": false,
-    "minified": false,
+    "es6": true,
+    "postcss": true,
+    "minified": true,
     "newFeature": true,
     "bigPackageSizeSupport": true,
     "babelSetting": {
@@ -18,9 +18,9 @@
     }
   },
   "compileType": "miniprogram",
-  "libVersion": "2.25.3",
+  "libVersion": "2.27.3",
   "appid": "touristappid",
-  "projectname": "shopping",
+  "projectname": "shoppingMall",
   "condition": {},
   "editorSetting": {
     "tabIndent": "insertSpaces",
