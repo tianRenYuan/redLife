@@ -5,6 +5,12 @@
 			"style": {
 				"navigationBarTitleText": "颜色生活"
 			}
+		},
+		{
+			"path": "src/pages/life/personal",
+			"style": {
+				"navigationBarTitleText": "个人中心"
+			}
 		}
 	],
 	"globalStyle": {

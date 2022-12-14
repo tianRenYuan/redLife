@@ -25,12 +25,68 @@
             style="width: 300rpx"
         />
       </view>
+	  <view class="bg-white margin-top  margin-lr padding-tb flex justify-between">
+		  <view class="text-center">
+		  <view class="margin-left">余额</view>
+		  <view class="margin-top-xs margin-left text-black">0.00</view>
+		  </view>
+		  <view class="text-center">
+		  <view class="margin-left">积分</view>
+		  <view class="margin-top-xs margin-left  text-black">0</view>
+		  </view>
+		  <view class="text-center">
+		  <view class="margin-left">卡</view>
+		  <view class="margin-top-xs margin-left text-black">120</view>
+		  </view>
+		  <view class="text-center">
+		  <view class="margin-left">优惠劵</view>
+		  <view class="margin-top-xs margin-left text-black ">0</view>
+		  </view>
+		  <view class="text-center">
+		  <view class="margin-right">零钱</view>
+		  <view class="margin-top-xs margin-right text-black">220</view>
+		  </view>
+	  </view>
+	 <view class="margin-top">
+	   <image src="https://p0.ssl.img.360kuai.com/t01599e501e5de00b00.jpg" mode="aspectFill" style="width: 300px;height: 50px;margin-left: 12px;"></image>
+	   </view>
+	   <view class="bg-white  margin-top margin-lr padding-tb  ">
+		   <view class="u-border-bottom justify-between flex padding margin-lr">
+		   <view class="text-black ">我的订单</view>
+		   <view class="text-gray margin-right-xs " @click="getTabBar">查看全部订单<text class="cuIcon-right"></text></view>
+		   </view>
+		   <view class="flex justify-between margin-top">
+		<view class="">
+		<view class="cuIcon-pay margin-left" style="font-size: 20px;"></view>
+		<view class="margin-top-xs margin-left-xs text-black">待付款</view>
+		</view>
+			 <view class="">
+			 <view class="cuIcon-send margin-left" style="font-size: 20px;"></view>
+			 <view class="margin-top-xs margin-left-xs text-black">待发货</view>
+			 </view>
+			 <view class="">
+			 <view class="cuIcon-deliver margin-left" style="font-size: 20px;"></view>
+			 <view class="margin-top-xs margin-left-xs text-black">待收货</view>
+			 </view>
+			 <view class="">
+			 <view class="cuIcon-vipcard margin-left" style="font-size: 20px;"></view>
+			 <view class="margin-top-xs margin-left-xs text-black">待评价</view>
+			 </view>
+			 <view class="">
+			 <view class="cuIcon-recharge margin-left-sm" style="font-size: 20px;"></view>
+			 <view class="margin-top-xs margin-right text-black">退款/售后</view>
+			 </view>
+		   </view>
+	   </view>
+	   <view class="bg-yellow light margin-top padding">
+		   <view>高风险地区暂不发货</view>
+	   </view>
       <!-- 推荐商品 -->
-      <view class="padding-lr-sm margin-top-sm flex">
+      <!-- <view class="padding-lr-sm margin-top-sm ">
         <view v-for="(item,index) in productList" :key="index" class="flex align-center margin-top-sm"
-              @click="getTabBar('/')">
-          <view class="flex align-start">
-            <image :src="item.img" mode="" style="width: 100px;height: 100px;"></image>
+             >
+          <view class="">
+            <image :src="item.img" mode="aspectFill" style="width: 100px;height: 100px;"></image>
             <view class="margin-left-sm">
               <view class="text-gray">品牌名称:
                 <text class="text-black">{{ item.name }}</text>
@@ -40,9 +96,9 @@
               </view>
             </view>
           </view>
-          <view class="cuIcon-right" style="font-size: 25px;"></view>
+          <view class="cuIcon-right" @click="getTabBar" style="font-size: 25px;"></view>
         </view>
-      </view>
+      </view> -->
       <!-- 底部导航栏 -->
       <view></view>
     </view>
@@ -88,11 +144,12 @@ export default {
 
   },
   methods: {
-    getTabBar(path) {
-      uni.redirectTo({
-        url: path
-      })
-    },
+	    getTabBar() {
+	              uni.navigateTo({
+	                  url: "/src/pages/life/personal"
+	              });
+	          },
+   
     add() {
       console.log('韦丽丹')
     }

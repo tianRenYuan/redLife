@@ -766,8 +766,8 @@ function populateParameters(result) {var _result$brand =
     appVersion: "1.0.0",
     appVersionCode: "100",
     appLanguage: getAppLanguage(hostLanguage),
-    uniCompileVersion: "3.6.5",
-    uniRuntimeVersion: "3.6.5",
+    uniCompileVersion: "3.6.4",
+    uniRuntimeVersion: "3.6.4",
     uniPlatform: undefined || "mp-weixin",
     deviceBrand: deviceBrand,
     deviceModel: model,
@@ -2370,9 +2370,7 @@ function parseBasePage(vuePageOptions, _ref6)
     this.$vm.$mp.query = query; // 兼容 mpvue
     this.$vm.__call_hook('onLoad', query);
   };
-  {
-    initUnknownHooks(pageOptions.methods, vuePageOptions, ['onReady']);
-  }
+  initUnknownHooks(pageOptions.methods, vuePageOptions, ['onReady']);
 
   return pageOptions;
 }
@@ -9086,9 +9084,9 @@ internalMixin(Vue);
 
 /***/ }),
 /* 5 */
-/*!****************************************!*\
-  !*** D:/work_space/redLife/pages.json ***!
-  \****************************************/
+/*!***************************************!*\
+  !*** F:/DemoList/shopping/pages.json ***!
+  \***************************************/
 /*! no static exports found */
 /***/ (function(module, exports) {
 
@@ -9229,9 +9227,9 @@ function normalizeComponent (
 
 /***/ }),
 /* 12 */
-/*!***********************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/index.js ***!
-  \***********************************************************/
+/*!**********************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/index.js ***!
+  \**********************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9318,9 +9316,9 @@ var install = function install(Vue) {
 
 /***/ }),
 /* 13 */
-/*!**********************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/mixin/mixin.js ***!
-  \**********************************************************************/
+/*!*********************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/mixin/mixin.js ***!
+  \*********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9487,9 +9485,9 @@ var install = function install(Vue) {
 
 /***/ }),
 /* 14 */
-/*!************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/mixin/mpMixin.js ***!
-  \************************************************************************/
+/*!***********************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/mixin/mpMixin.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9502,9 +9500,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 15 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/index.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/index.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9515,9 +9513,9 @@ _Request.default;exports.default = _default;
 
 /***/ }),
 /* 16 */
-/*!************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/core/Request.js ***!
-  \************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/core/Request.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9723,9 +9721,9 @@ Request = /*#__PURE__*/function () {
 
 /***/ }),
 /* 17 */
-/*!********************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
-  \********************************************************************************************/
+/*!*******************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/core/dispatchRequest.js ***!
+  \*******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9736,9 +9734,9 @@ function _default(config) {return (0, _index.default)(config);};exports.default 
 
 /***/ }),
 /* 18 */
-/*!**************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/adapters/index.js ***!
-  \**************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/adapters/index.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9844,9 +9842,9 @@ function _default(config) {return new Promise(function (resolve, reject) {
 
 /***/ }),
 /* 19 */
-/*!****************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/helpers/buildURL.js ***!
-  \****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/helpers/buildURL.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -9923,9 +9921,9 @@ function buildURL(url, params) {
 
 /***/ }),
 /* 20 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/utils.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/utils.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10064,9 +10062,9 @@ function isUndefined(val) {
 
 /***/ }),
 /* 21 */
-/*!******************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/core/buildFullPath.js ***!
-  \******************************************************************************************/
+/*!*****************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/core/buildFullPath.js ***!
+  \*****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10094,9 +10092,9 @@ function buildFullPath(baseURL, requestedURL) {
 
 /***/ }),
 /* 22 */
-/*!*********************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
-  \*********************************************************************************************/
+/*!********************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/helpers/isAbsoluteURL.js ***!
+  \********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10118,9 +10116,9 @@ function isAbsoluteURL(url) {
 
 /***/ }),
 /* 23 */
-/*!*******************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
-  \*******************************************************************************************/
+/*!******************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/helpers/combineURLs.js ***!
+  \******************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10142,9 +10140,9 @@ function combineURLs(baseURL, relativeURL) {
 
 /***/ }),
 /* 24 */
-/*!***********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/core/settle.js ***!
-  \***********************************************************************************/
+/*!**********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/core/settle.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10168,9 +10166,9 @@ function settle(resolve, reject, response) {var
 
 /***/ }),
 /* 25 */
-/*!***********************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
-  \***********************************************************************************************/
+/*!**********************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/core/InterceptorManager.js ***!
+  \**********************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10228,9 +10226,9 @@ InterceptorManager;exports.default = _default;
 
 /***/ }),
 /* 26 */
-/*!****************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/core/mergeConfig.js ***!
-  \****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/core/mergeConfig.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10341,9 +10339,9 @@ function _default(globalsConfig) {var config2 = arguments.length > 1 && argument
 
 /***/ }),
 /* 27 */
-/*!*************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/core/defaults.js ***!
-  \*************************************************************************************/
+/*!************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/core/defaults.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10379,9 +10377,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 28 */
-/*!***********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/luch-request/utils/clone.js ***!
-  \***********************************************************************************/
+/*!**********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/luch-request/utils/clone.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -10650,7 +10648,7 @@ var clone = function () {
 }();var _default =
 
 clone;exports.default = _default;
-/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../Program Files/HBuilderX/plugins/uniapp-cli/node_modules/buffer/index.js */ 29).Buffer))
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./../../../../../../../360Downloads/Software/hbuilkderx/HBuilderX/plugins/uniapp-cli/node_modules/buffer/index.js */ 29).Buffer))
 
 /***/ }),
 /* 29 */
@@ -12727,17 +12725,17 @@ module.exports = Array.isArray || function (arr) {
 
 /***/ }),
 /* 33 */
-/*!*********************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/util/route.js ***!
-  \*********************************************************************/
+/*!********************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/util/route.js ***!
+  \********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
 /* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0;var _regenerator = _interopRequireDefault(__webpack_require__(/*! ./node_modules/@babel/runtime/regenerator */ 34));function _interopRequireDefault(obj) {return obj && obj.__esModule ? obj : { default: obj };}function asyncGeneratorStep(gen, resolve, reject, _next, _throw, key, arg) {try {var info = gen[key](arg);var value = info.value;} catch (error) {reject(error);return;}if (info.done) {resolve(value);} else {Promise.resolve(value).then(_next, _throw);}}function _asyncToGenerator(fn) {return function () {var self = this,args = arguments;return new Promise(function (resolve, reject) {var gen = fn.apply(self, args);function _next(value) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "next", value);}function _throw(err) {asyncGeneratorStep(gen, resolve, reject, _next, _throw, "throw", err);}_next(undefined);});};}function _classCallCheck(instance, Constructor) {if (!(instance instanceof Constructor)) {throw new TypeError("Cannot call a class as a function");}}function _defineProperties(target, props) {for (var i = 0; i < props.length; i++) {var descriptor = props[i];descriptor.enumerable = descriptor.enumerable || false;descriptor.configurable = true;if ("value" in descriptor) descriptor.writable = true;Object.defineProperty(target, descriptor.key, descriptor);}}function _createClass(Constructor, protoProps, staticProps) {if (protoProps) _defineProperties(Constructor.prototype, protoProps);if (staticProps) _defineProperties(Constructor, staticProps);return Constructor;} /**
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              * 并且带有路由拦截功能
-                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              */var
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * 路由跳转方法，该方法相对于直接使用uni.xxx的好处是使用更加简单快捷
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 * 并且带有路由拦截功能
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 */var
 
 Router = /*#__PURE__*/function () {
   function Router() {_classCallCheck(this, Router);
@@ -13650,9 +13648,9 @@ if (hadRuntime) {
 
 /***/ }),
 /* 37 */
-/*!*********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/function/colorGradient.js ***!
-  \*********************************************************************************/
+/*!********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/function/colorGradient.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -13793,9 +13791,9 @@ function colorToRgba(color, alpha) {
 
 /***/ }),
 /* 38 */
-/*!************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/function/test.js ***!
-  \************************************************************************/
+/*!***********************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/function/test.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14090,9 +14088,9 @@ function regExp(o) {
 
 /***/ }),
 /* 39 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/function/debounce.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/function/debounce.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14129,9 +14127,9 @@ debounce;exports.default = _default;
 
 /***/ }),
 /* 40 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/function/throttle.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/function/throttle.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14169,9 +14167,9 @@ throttle;exports.default = _default;
 
 /***/ }),
 /* 41 */
-/*!*************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/function/index.js ***!
-  \*************************************************************************/
+/*!************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/function/index.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -14884,9 +14882,9 @@ function setConfig(_ref3)
 
 /***/ }),
 /* 42 */
-/*!*************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/function/digit.js ***!
-  \*************************************************************************/
+/*!************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/function/digit.js ***!
+  \************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15059,9 +15057,9 @@ function enableBoundaryChecking() {var flag = arguments.length > 0 && arguments[
 
 /***/ }),
 /* 43 */
-/*!************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/config.js ***!
-  \************************************************************************/
+/*!***********************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/config.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15102,9 +15100,9 @@ if (true) {
 
 /***/ }),
 /* 44 */
-/*!***********************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props.js ***!
-  \***********************************************************************/
+/*!**********************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15301,9 +15299,9 @@ _upload.default);exports.default = _default;
 
 /***/ }),
 /* 45 */
-/*!***********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/actionSheet.js ***!
-  \***********************************************************************************/
+/*!**********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/actionSheet.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15334,9 +15332,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 46 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/album.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/album.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15367,9 +15365,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 47 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/alert.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/alert.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15397,9 +15395,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 48 */
-/*!******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/avatar.js ***!
-  \******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/avatar.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15433,9 +15431,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 49 */
-/*!***********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/avatarGroup.js ***!
-  \***********************************************************************************/
+/*!**********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/avatarGroup.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15464,9 +15462,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 50 */
-/*!*******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/backtop.js ***!
-  \*******************************************************************************/
+/*!******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/backtop.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15498,9 +15496,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 51 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/badge.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/badge.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15533,9 +15531,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 52 */
-/*!******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/button.js ***!
-  \******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/button.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15583,9 +15581,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 53 */
-/*!********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/calendar.js ***!
-  \********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/calendar.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15633,9 +15631,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 54 */
-/*!***********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/carKeyboard.js ***!
-  \***********************************************************************************/
+/*!**********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/carKeyboard.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15656,9 +15654,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 55 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/cell.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/cell.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15699,9 +15697,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 56 */
-/*!*********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/cellGroup.js ***!
-  \*********************************************************************************/
+/*!********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/cellGroup.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15724,9 +15722,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 57 */
-/*!********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/checkbox.js ***!
-  \********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/checkbox.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15759,9 +15757,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 58 */
-/*!*************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
-  \*************************************************************************************/
+/*!************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/checkboxGroup.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15796,9 +15794,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 59 */
-/*!**************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/circleProgress.js ***!
-  \**************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/circleProgress.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15819,9 +15817,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 60 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/code.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/code.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15848,9 +15846,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 61 */
-/*!*********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/codeInput.js ***!
-  \*********************************************************************************/
+/*!********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/codeInput.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15885,9 +15883,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 62 */
-/*!***************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/col.js ***!
-  \***************************************************************************/
+/*!**************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/col.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15912,9 +15910,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 63 */
-/*!********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/collapse.js ***!
-  \********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/collapse.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15937,9 +15935,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 64 */
-/*!************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/collapseItem.js ***!
-  \************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/collapseItem.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -15970,9 +15968,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 65 */
-/*!************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/columnNotice.js ***!
-  \************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/columnNotice.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16002,9 +16000,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 66 */
-/*!*********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/countDown.js ***!
-  \*********************************************************************************/
+/*!********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/countDown.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16028,9 +16026,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 67 */
-/*!*******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/countTo.js ***!
-  \*******************************************************************************/
+/*!******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/countTo.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16061,9 +16059,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 68 */
-/*!**************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/datetimePicker.js ***!
-  \**************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/datetimePicker.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16105,9 +16103,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 69 */
-/*!*******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/divider.js ***!
-  \*******************************************************************************/
+/*!******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/divider.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16135,9 +16133,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 70 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/empty.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/empty.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16168,9 +16166,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 71 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/form.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/form.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16198,9 +16196,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 72 */
-/*!********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/formItem.js ***!
-  \********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/formItem.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16229,9 +16227,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 73 */
-/*!***************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/gap.js ***!
-  \***************************************************************************/
+/*!**************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/gap.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16256,9 +16254,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 74 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/grid.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/grid.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16281,9 +16279,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 75 */
-/*!********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/gridItem.js ***!
-  \********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/gridItem.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16305,9 +16303,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 76 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/icon.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/icon.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16349,9 +16347,9 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 43));f
 
 /***/ }),
 /* 77 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/image.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/image.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16387,9 +16385,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 78 */
-/*!***********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/indexAnchor.js ***!
-  \***********************************************************************************/
+/*!**********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/indexAnchor.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16414,9 +16412,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 79 */
-/*!*********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/indexList.js ***!
-  \*********************************************************************************/
+/*!********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/indexList.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16441,9 +16439,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 80 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/input.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/input.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16497,9 +16495,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 81 */
-/*!********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/keyboard.js ***!
-  \********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/keyboard.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16535,9 +16533,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 82 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/line.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/line.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16563,9 +16561,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 83 */
-/*!************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/lineProgress.js ***!
-  \************************************************************************************/
+/*!***********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/lineProgress.js ***!
+  \***********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16590,9 +16588,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 84 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/link.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/link.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16624,9 +16622,9 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 43));f
 
 /***/ }),
 /* 85 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/list.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/list.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16660,9 +16658,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 86 */
-/*!********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/listItem.js ***!
-  \********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/listItem.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16683,9 +16681,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 87 */
-/*!***********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/loadingIcon.js ***!
-  \***********************************************************************************/
+/*!**********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/loadingIcon.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16721,9 +16719,9 @@ var _config = _interopRequireDefault(__webpack_require__(/*! ../config */ 43));f
 
 /***/ }),
 /* 88 */
-/*!***********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/loadingPage.js ***!
-  \***********************************************************************************/
+/*!**********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/loadingPage.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16752,9 +16750,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 89 */
-/*!********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/loadmore.js ***!
-  \********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/loadmore.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16792,9 +16790,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 90 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/modal.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/modal.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16830,9 +16828,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 91 */
-/*!******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/navbar.js ***!
-  \******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/navbar.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16869,9 +16867,9 @@ var _color = _interopRequireDefault(__webpack_require__(/*! ../color */ 92));fun
 
 /***/ }),
 /* 92 */
-/*!***********************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/color.js ***!
-  \***********************************************************************/
+/*!**********************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/color.js ***!
+  \**********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16896,9 +16894,9 @@ color;exports.default = _default;
 
 /***/ }),
 /* 93 */
-/*!*********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/noNetwork.js ***!
-  \*********************************************************************************/
+/*!********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/noNetwork.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16921,9 +16919,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 94 */
-/*!*********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/noticeBar.js ***!
-  \*********************************************************************************/
+/*!********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/noticeBar.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16956,9 +16954,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 95 */
-/*!******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/notify.js ***!
-  \******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/notify.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -16986,9 +16984,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 96 */
-/*!*********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/numberBox.js ***!
-  \*********************************************************************************/
+/*!********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/numberBox.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17029,9 +17027,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 97 */
-/*!**************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/numberKeyboard.js ***!
-  \**************************************************************************************/
+/*!*************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/numberKeyboard.js ***!
+  \*************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17054,9 +17052,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 98 */
-/*!*******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/overlay.js ***!
-  \*******************************************************************************/
+/*!******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/overlay.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17080,9 +17078,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 99 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/parse.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/parse.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17110,9 +17108,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 100 */
-/*!******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/picker.js ***!
-  \******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/picker.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17147,9 +17145,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 101 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/popup.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/popup.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17184,9 +17182,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 102 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/radio.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/radio.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17219,9 +17217,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 103 */
-/*!**********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/radioGroup.js ***!
-  \**********************************************************************************/
+/*!*********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/radioGroup.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17257,9 +17255,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 104 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/rate.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/rate.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17291,9 +17289,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 105 */
-/*!********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/readMore.js ***!
-  \********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/readMore.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17321,9 +17319,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 106 */
-/*!***************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/row.js ***!
-  \***************************************************************************/
+/*!**************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/row.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17346,9 +17344,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 107 */
-/*!*********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/rowNotice.js ***!
-  \*********************************************************************************/
+/*!********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/rowNotice.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17375,9 +17373,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 108 */
-/*!**********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/scrollList.js ***!
-  \**********************************************************************************/
+/*!*********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/scrollList.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17403,9 +17401,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 109 */
-/*!******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/search.js ***!
-  \******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/search.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17448,9 +17446,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 110 */
-/*!*******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/section.js ***!
-  \*******************************************************************************/
+/*!******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/section.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17480,9 +17478,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 111 */
-/*!********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/skeleton.js ***!
-  \********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/skeleton.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17513,9 +17511,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 112 */
-/*!******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/slider.js ***!
-  \******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/slider.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17546,9 +17544,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 113 */
-/*!*********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/statusBar.js ***!
-  \*********************************************************************************/
+/*!********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/statusBar.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17569,9 +17567,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 114 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/steps.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/steps.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17598,9 +17596,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 115 */
-/*!*********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/stepsItem.js ***!
-  \*********************************************************************************/
+/*!********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/stepsItem.js ***!
+  \********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17624,9 +17622,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 116 */
-/*!******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/sticky.js ***!
-  \******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/sticky.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17652,9 +17650,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 117 */
-/*!**********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/subsection.js ***!
-  \**********************************************************************************/
+/*!*********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/subsection.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17683,9 +17681,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 118 */
-/*!***********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/swipeAction.js ***!
-  \***********************************************************************************/
+/*!**********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/swipeAction.js ***!
+  \**********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17706,9 +17704,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 119 */
-/*!***************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/swipeActionItem.js ***!
-  \***************************************************************************************/
+/*!**************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/swipeActionItem.js ***!
+  \**************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17735,9 +17733,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 120 */
-/*!******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/swiper.js ***!
-  \******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/swiper.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17781,9 +17779,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 121 */
-/*!****************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/swipterIndicator.js ***!
-  \****************************************************************************************/
+/*!***************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/swipterIndicator.js ***!
+  \***************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17808,9 +17806,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 122 */
-/*!******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/switch.js ***!
-  \******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/switch.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17840,9 +17838,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 123 */
-/*!******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/tabbar.js ***!
-  \******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/tabbar.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17870,9 +17868,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 124 */
-/*!**********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/tabbarItem.js ***!
-  \**********************************************************************************/
+/*!*********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/tabbarItem.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17898,9 +17896,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 125 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/tabs.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/tabs.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17938,9 +17936,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 126 */
-/*!***************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/tag.js ***!
-  \***************************************************************************/
+/*!**************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/tag.js ***!
+  \**************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -17975,9 +17973,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 127 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/text.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/text.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18020,9 +18018,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 128 */
-/*!********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/textarea.js ***!
-  \********************************************************************************/
+/*!*******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/textarea.js ***!
+  \*******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18064,9 +18062,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 129 */
-/*!*****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/toast.js ***!
-  \*****************************************************************************/
+/*!****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/toast.js ***!
+  \****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18101,9 +18099,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 130 */
-/*!*******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/toolbar.js ***!
-  \*******************************************************************************/
+/*!******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/toolbar.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18129,9 +18127,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 131 */
-/*!*******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/tooltip.js ***!
-  \*******************************************************************************/
+/*!******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/tooltip.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18162,9 +18160,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 132 */
-/*!**********************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/transition.js ***!
-  \**********************************************************************************/
+/*!*********************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/transition.js ***!
+  \*********************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18188,9 +18186,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 133 */
-/*!******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/props/upload.js ***!
-  \******************************************************************************/
+/*!*****************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/props/upload.js ***!
+  \*****************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18232,9 +18230,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 134 */
-/*!************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/config/zIndex.js ***!
-  \************************************************************************/
+/*!***********************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/config/zIndex.js ***!
+  \***********************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18261,9 +18259,9 @@ Object.defineProperty(exports, "__esModule", { value: true });exports.default = 
 
 /***/ }),
 /* 135 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/libs/function/platform.js ***!
-  \****************************************************************************/
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/libs/function/platform.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18358,10 +18356,16 @@ platform;exports.default = _default;
 /* 146 */,
 /* 147 */,
 /* 148 */,
-/* 149 */
-/*!*******************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/components/u-swiper/props.js ***!
-  \*******************************************************************************/
+/* 149 */,
+/* 150 */,
+/* 151 */,
+/* 152 */,
+/* 153 */,
+/* 154 */,
+/* 155 */
+/*!******************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/components/u-swiper/props.js ***!
+  \******************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18491,17 +18495,17 @@ platform;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 150 */,
-/* 151 */,
-/* 152 */,
-/* 153 */,
-/* 154 */,
-/* 155 */,
 /* 156 */,
-/* 157 */
-/*!****************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/components/u-gap/props.js ***!
-  \****************************************************************************/
+/* 157 */,
+/* 158 */,
+/* 159 */,
+/* 160 */,
+/* 161 */,
+/* 162 */,
+/* 163 */
+/*!***************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/components/u-gap/props.js ***!
+  \***************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18530,17 +18534,17 @@ platform;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 158 */,
-/* 159 */,
-/* 160 */,
-/* 161 */,
-/* 162 */,
-/* 163 */,
 /* 164 */,
-/* 165 */
-/*!*************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
-  \*************************************************************************************/
+/* 165 */,
+/* 166 */,
+/* 167 */,
+/* 168 */,
+/* 169 */,
+/* 170 */,
+/* 171 */
+/*!************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/components/u-loading-icon/props.js ***!
+  \************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
@@ -18604,17 +18608,17 @@ platform;exports.default = _default;
 /* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
-/* 166 */,
-/* 167 */,
-/* 168 */,
-/* 169 */,
-/* 170 */,
-/* 171 */,
 /* 172 */,
-/* 173 */
-/*!*****************************************************************************************!*\
-  !*** D:/work_space/redLife/uni_modules/uview-ui/components/u-swiper-indicator/props.js ***!
-  \*****************************************************************************************/
+/* 173 */,
+/* 174 */,
+/* 175 */,
+/* 176 */,
+/* 177 */,
+/* 178 */,
+/* 179 */
+/*!****************************************************************************************!*\
+  !*** F:/DemoList/shopping/uni_modules/uview-ui/components/u-swiper-indicator/props.js ***!
+  \****************************************************************************************/
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
